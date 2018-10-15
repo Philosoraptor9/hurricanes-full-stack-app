@@ -8,5 +8,13 @@
 </head>
 <body>
     <h1>The 2018 Hurricane Season</h1>
+    <ul>
+        <% for (let i = 0; i < hurricanes.length; i++) { %>
+        <li>
+            <a href="/hurricanes/<%=hurricanes[i].id%>"><%=hurricanes[i].name; %></a>
+            <!--  ADD DELETE FORM HERE-->
+        </li>
+        <% } %>
+    </ul>
 </body>
 </html>

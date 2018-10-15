@@ -12,9 +12,9 @@ app.use(methodOverride('_method'));
 
 app.use('/hurricanes', hurricanesController);
 
-app.get('/', (req, res) => {
-    res.send('This is your 2018 Hurricane season')
-  });
+// app.get('/', (req, res) => {
+//     res.send('This is your 2018 Hurricane season')
+//   });
 
 app.listen(3000, () => {
     console.log('listening on port 3000')
